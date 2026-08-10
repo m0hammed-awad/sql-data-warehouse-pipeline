@@ -1,4 +1,4 @@
-# sql-data-warehouse-pipeline
+# SQL Data Warehouse Pipeline
 
 > An end-to-end SQL Server data engineering project for building a modern data warehouse using ETL, data quality, layered architecture, and dimensional modeling.
 
