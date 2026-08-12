@@ -46,11 +46,11 @@ PRINT '>>Load Duration: ' +CAST(DATEDIFF(second, @start_time, @end_time) AS NVAR
 PRINT '>>--------------';
 
 SET @start_time = GETDATE();
-PRINT'>>Truncating Table: bronze.crm_cust_info';
-TRUNCATE TABLE bronze.crm_cust_info;
+PRINT'>>Truncating Table: bronze.crm_prd_info';
+TRUNCATE TABLE bronze.crm_prd_info;
 
-PRINT'>>Inserting Data Into:bronze.crm_cust_info';
-BULK INSERT bronze.crm_cust_info
+PRINT'>>Inserting Data Into:bronze.crm_prd_info';
+BULK INSERT bronze.crm_prd_info
 FROM 'C:\Users\lenovo\Desktop\datawarehouse\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
 WITH (
 FIRSTROW = 2 ,
