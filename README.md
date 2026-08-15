@@ -276,46 +276,46 @@ Sales transactions connected to the customer and product dimensions via surrogat
 ```text
         ┌────────────────────────┐
         │   gold.dim_customers   │
-        │-------------------------│
-        │ PK customer_key         │
-        │    customer_id          │
-        │    customer_number      │
-        │    first_name           │
-        │    last_name            │
-        │    country               │
-        │    gender                │
-        │    birthdate             │
-        └───────────┬─────────────┘
+        │------------------------│
+        │ PK customer_key        │
+        │    customer_id         │
+        │    customer_number     │
+        │    first_name          │
+        │    last_name           │
+        │    country             │
+        │    gender              │
+        │    birthdate           │
+        └───────────┬────────────┘
                      │ FK
                      ▼
         ┌────────────────────────┐
-        │     gold.fact_sales     │
-        │-------------------------│
-        │    order_number          │
-        │ FK product_key           │
-        │ FK customer_key          │
-        │    order_date            │
-        │    shipping_date         │
-        │    due_date               │
-        │    sales_amount           │
-        │    quantity                │
-        │    price                    │
-        └───────────┬─────────────┘
+        │     gold.fact_sales    │
+        │------------------------│
+        │    order_number        │
+        │ FK product_key         │
+        │ FK customer_key        │
+        │    order_date          │
+        │    shipping_date       │
+        │    due_date            │
+        │    sales_amount        │
+        │    quantity            │
+        │    price               │
+        └───────────┬────────────┘
                      │ FK
                      ▼
         ┌────────────────────────┐
-        │    gold.dim_products     │
-        │-------------------------│
-        │ PK product_key            │
-        │    product_id              │
-        │    product_number           │
-        │    product_name              │
-        │    category_id                │
-        │    category                    │
-        │    subcategory                  │
-        │    maintenance                   │
-        │    cost                           │
-        │    product_line                    │
+        │    gold.dim_products   │
+        │------------------------│
+        │ PK product_key         │
+        │    product_id          │
+        │    product_number      │
+        │    product_name        │
+        │    category_id         │
+        │    category            │
+        │    subcategory         │
+        │    maintenance         │
+        │    cost                │
+        │    product_line        │
         └────────────────────────┘
 ```
 
